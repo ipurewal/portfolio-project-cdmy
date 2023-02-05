@@ -20,6 +20,25 @@
 </nav>
 </header>
 <body>
-    
+    <div id="about">
+    <h3>About Me</h3>
+    <p>I am 20 yo, who started web dev in November 2022. I have so far learn a lot ab HTML CSS and JS.
+        I am currently at med school.
+    </p>
+    <h3>Projects</h3>
+    <h4 id="project1" >Credit Card Validator</h4>
+    <img id="prj1img" src="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png" alt="project">
+    </div>
+    <script>
+       var credit_card = document.getElementById("project1")
+       var project1img = document.getElementById("prj1img")
+       prj1img.style.display = "none"
+       function colourChange(){
+        credit_card.style.color = "red"
+       }
+       credit_card.onmouseover   = colourChange
+       credit_card.onmouseleave = ()=>{credit_card.style.color = ""}
+       credit_card.onclick = ()=>{prj1img.style.display ="block"}
+    </script>
 </body>
 </html>

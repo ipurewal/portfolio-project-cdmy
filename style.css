@@ -26,3 +26,15 @@ margin: 0 auto;
     margin-left: 5px;
     margin-right: 5px;
 }
+
+#about{
+    width: 75%;
+    margin: 0 auto;
+    border: 1px solid darkblue;
+    
+}
+
+img[src*="code"]{
+width:50%;
+/*display: none;*/
+}
