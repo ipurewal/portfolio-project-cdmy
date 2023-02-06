@@ -5,7 +5,8 @@ font-family: Arial, Helvetica, sans-serif;
 width:75%; 
 margin: 0 auto;
 }
-*{font-family: 'Montserrat', sans-serif;}
+*{font-family: 'Montserrat', sans-serif;
+background-color: azure;}
 
 
 #name{
@@ -26,11 +27,49 @@ margin: 0 auto;
 }
 
 #about{
-    width: 75%;
     margin: 0 auto;
+    
     
 }
 
 img[src*="code"]{
 width:50%;
 }
+
+#container2{
+    display: flex;
+    width:75%;
+    margin: 0 auto;
+    
+}
+#webdevImg{
+    width:50%;
+   
+    
+}
+img[src*="web"]{
+    width:100%;
+    }
+
+@media only screen and (max-width: 600px) {
+    img[src*="web"]{
+        display: none;
+        }
+        nav{
+            display: block;
+        width:100%; 
+        }
+        #name{
+            display:block;
+            text-align: center
+          
+           
+        }
+        #links{
+            display: block;
+           line-height: 1px;
+            text-align: center
+        }
+
+        
+}   

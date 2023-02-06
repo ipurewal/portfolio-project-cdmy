@@ -24,6 +24,7 @@
 </nav>
 </header>
 <body>
+    <div id="container2">
     <div id="about">
     <h3>About Me</h3>
     <p>I am 20 yo, who started web dev in November 2022. I have so far learn a lot ab HTML CSS and JS.
@@ -32,6 +33,25 @@
     <h3>Projects</h3>
     <h4 id="project1" >Credit Card Validator</h4>
     <img id="prj1img" src="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png" alt="project">
-    <script src="C:\Projects\portfolio-website-project\program.js"></script></div>
+    <script src="C:\Projects\portfolio-website-project\program.js"></script>
+    <h4 id="project2" >Tea shop website</h4>
+    <img id="prj2img" src="https://cdn.dribbble.com/users/2064121/screenshots/15764131/media/371d86b59299d04bab15c288c8cab55e.png?compress=1&resize=400x300&vertical=top" alt="didn't acc make this website">
+    <script>
+        var teaShop = document.getElementById("project2")
+        var prj2img = document.getElementById("prj2img")
+        teaShop.onmouseover = ()=> teaShop.style.color = "darkblue"
+        teaShop.onmouseleave = ()=>{teaShop.style.color = ""}
+        prj2img.style.display = "none"
+        function showproject2(){
+         if(prj2img.style.display ==="none"){
+            prj2img.style.display ="block"
+        }
+    else{prj2img.style.display="none"}}
+        teaShop.onclick = showproject2
+    </script>
+</div>
+    <div id="webdevImg">
+        <img src="https://matchdesigns.com/wordpress/wp-content/uploads/2018/10/qualities-hiring-web-designer-or-developer-1-1080x675.jpg" alt="web dev">
+    </div></div>
 </body>
 </html>
